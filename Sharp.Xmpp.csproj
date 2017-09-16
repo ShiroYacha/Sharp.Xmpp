@@ -54,10 +54,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ARSoft.Tools.Net, Version=2.2.5.0, Culture=neutral, PublicKeyToken=1940454cd762ec57, processorArchitecture=MSIL">
-      <HintPath>packages\ARSoft.Tools.Net.2.2.5\lib\net45\ARSoft.Tools.Net.dll</HintPath>
+      <HintPath>..\XmppXamarinTesting\XmppXamarinTest\packages\ARSoft.Tools.Net.2.2.5\lib\net45\ARSoft.Tools.Net.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="BouncyCastle.Crypto, Version=1.8.1.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
-      <HintPath>packages\BouncyCastle.1.8.1\lib\BouncyCastle.Crypto.dll</HintPath>
+      <HintPath>..\XmppXamarinTesting\XmppXamarinTest\packages\BouncyCastle.1.8.1\lib\BouncyCastle.Crypto.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -181,6 +183,7 @@
     <Compile Include="Extensions\XEP-0279\ServerIpCheck.cs" />
     <Compile Include="Extensions\XEP-0280\MessageCarbons.cs" />
     <Compile Include="Im\SubscriptionRequest.cs" />
+    <Compile Include="Jid.cs" />
     <Compile Include="XmppDisconnectionException.cs" />
     <Compile Include="XmppExceptions.cs" />
     <Compile Include="ErrorCondition.cs" />
@@ -218,7 +221,6 @@
     <Compile Include="Im\SubscriptionState.cs" />
     <Compile Include="Im\UnsubscribedEventArgs.cs" />
     <Compile Include="Im\XmlDictionary.cs" />
-    <Compile Include="Jid.cs" />
     <Compile Include="Core\Message.cs" />
     <Compile Include="Core\MessageEventArgs.cs" />
     <Compile Include="Core\Presence.cs" />
@@ -258,7 +260,6 @@
     <None Include="ReleaseNotes.md" />
     <None Include="UPNPLib" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
